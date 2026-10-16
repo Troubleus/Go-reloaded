@@ -27,7 +27,7 @@ func FormatParameters(text [][]rune) ([][]rune, error) {
 				}
 				text[index-1] = decimal
 			case "bin":
-				decimal,err := Hex(text[index-1])
+				decimal,err := Bin(text[index-1])
 				if err != nil {
 					return [][]rune{},err
 				}
